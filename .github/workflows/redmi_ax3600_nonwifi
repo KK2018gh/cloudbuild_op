@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: redmi_ax3600_nowifi
+name: redmi_ax3600_nonwifi
 
 on:
   repository_dispatch:
@@ -24,7 +24,7 @@ env:
   REPO_URL: https://github.com/KK2018gh/lede.git
   REPO_BRANCH: nowifi
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./config/redmi_ax3600_nowifi.config
+  CONFIG_FILE: ./config/redmi_ax3600_nonwifi.config
   DIY_P1_SH: ./scripts/diy-part1.sh
   DIY_P2_SH: ./scripts/diy-part2.sh
   UPLOAD_BIN_DIR: false
