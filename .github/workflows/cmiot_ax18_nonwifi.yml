@@ -20,7 +20,6 @@ on:
         default: 'false'
 
 env:
-  #REPO_URL: https://github.com/sdf8057/lede.git
   REPO_URL: https://github.com/KK2018gh/openwrt-gl-ax1800.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
