@@ -129,9 +129,9 @@ jobs:
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-    #    path: ${{ env.FIRMWARE }}
+        path: ${{ env.FIRMWARE }}
     #    name: OpenWrt_firmware
-        path: openwrt/bin
+    #    path: openwrt/bin
 
     - name: Upload firmware to cowtransfer
       id: cowtransfer
