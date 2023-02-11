@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/sdf8057/lede.git
+  REPO_URL: https://github.com/KK2018gh/lede.git
   REPO_BRANCH: nowifi
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/redmi_ax6_nowifi.config
