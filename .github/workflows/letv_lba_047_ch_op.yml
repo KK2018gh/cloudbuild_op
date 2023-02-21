@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Letv_lba_047_ch_op
+name: letv_lba_047_ch_op
 
 on:
   repository_dispatch:
