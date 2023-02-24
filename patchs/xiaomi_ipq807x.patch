@@ -23,7 +23,9 @@ index 14419ee399a9..8c7def89be02 100644
  #src-git helloworld https://github.com/fw876/helloworld.git
  
 diff --git a/package/base-files/files/etc/banner b/package/base-files/files/etc/banner
-@@ -1,9 +1,9 @@
+--- a/package/base-files/files/etc/banner
++++ b/package/base-files/files/etc/banner
+@@ -1,10 +1,10 @@
 -     _________
 -    /        /\      _    ___ ___  ___
 -   /  LE    /  \    | |  | __|   \| __|
@@ -33,6 +35,7 @@ diff --git a/package/base-files/files/etc/banner b/package/base-files/files/etc/
 -  \    LE  \    /  -------------------------------------------
 -   \  DE    \  /    %D %V, %C
 -    \________\/    -------------------------------------------
+-
 +     _________
 +    /        /\      _    ___ ___  ___
 +   /  LE    /  \    | |  | __|   \| __|  QianJiangYouShui
@@ -42,6 +45,7 @@ diff --git a/package/base-files/files/etc/banner b/package/base-files/files/etc/
 +  \    LE  \    /  ------------------------------------------
 +   \  DE    \  /       %D %V, %C
 +    \________\/    ------------------------------------------
++
  
 diff --git a/package/lean/autocore/files/arm/index.htm b/package/lean/autocore/files/arm/index.htm
 index 0537b09035ad..9f4836666bdb 100644
