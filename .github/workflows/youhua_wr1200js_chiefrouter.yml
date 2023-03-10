@@ -52,6 +52,8 @@ jobs:
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
+        git config --global user.email "aa@163.com"
+        git config --global user.name "aa"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
     
