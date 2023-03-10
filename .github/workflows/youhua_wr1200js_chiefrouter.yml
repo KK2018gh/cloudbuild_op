@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: youhua_wr1200js
+name: youhua_wr1200js_chiefrouter
 
 on:
   repository_dispatch:
