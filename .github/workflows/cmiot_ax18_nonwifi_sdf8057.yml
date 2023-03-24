@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/KK2018gh/ipq6000.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./config/cmiot_ax18_nonwifi_sdf8057
+  CONFIG_FILE: ./config/cmiot_ax18_nonwifi_sdf8057.config
   DIY_P1_SH: ./scripts/diy-part1.sh
   DIY_P2_SH: ./scripts/diy-part2.sh
   UPLOAD_BIN_DIR: false
