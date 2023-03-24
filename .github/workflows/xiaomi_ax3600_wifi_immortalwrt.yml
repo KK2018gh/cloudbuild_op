@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-18.06-k5.4
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/xiaomi_ax3600_wifi_immortalwrt.config
   DIY_P1_SH: ./scripts/diy-part-immortalwrt.sh
