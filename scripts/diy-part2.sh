@@ -15,5 +15,3 @@ sed -i 's/192.168.1.1/192.168.6.254/g' package/base-files/files/bin/config_gener
 
 # Enable Cache
 echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
-
-# echo 'iptables -t nat -I PREROUTING -i pppoe-wan -p tcp --dport 9002 -j DNAT --to-destination 192.168.6.60:9002' >> /etc/firewall.user
