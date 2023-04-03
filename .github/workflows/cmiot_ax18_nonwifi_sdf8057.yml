@@ -24,7 +24,7 @@ env:
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/cmiot_ax18_nonwifi_sdf8057.config
-  DIY_P1_SH: ./scripts/diy-part-ipq6000.sh
+  DIY_P1_SH: ./scripts/diy-ipq6000-sdf8057.sh
   DIY_P2_SH: ./scripts/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
