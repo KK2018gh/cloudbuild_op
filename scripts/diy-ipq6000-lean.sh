@@ -18,3 +18,11 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo "src-git kenzo https://github.com/kenzok8/small-package.git" >> "feeds.conf.default"
 echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
+
+#NSS源修改
+sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-clients/Makefile
+sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-dp/Makefile
+sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-drv/Makefile
+sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-ecm/Makefile
+sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-ssdk-shell/Makefile
+sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-ssdk/Makefile
