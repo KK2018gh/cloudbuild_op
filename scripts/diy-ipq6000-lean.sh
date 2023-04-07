@@ -26,3 +26,15 @@ sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-n
 sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-ecm/Makefile
 sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-ssdk-shell/Makefile
 sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-ssdk/Makefile
+
+# 修改最大连接数
+#sed -i 's/nf_conntrack_max=16384/nf_conntrack_max=65536/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
+
+#firewall
+#echo 'iptables -t nat -I PREROUTING -i pppoe-wan -p tcp --dport 9002 -j DNAT --to-destination 192.168.6.60:9002' >> /etc/firewall.user
+
+#cpufreq
+#sed -i 's/ondemand 864000 1200000 10 50/ondemand 1056000 1608000 10 35/g' extra/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/cpufreq
+
+
+
