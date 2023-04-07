@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: cmiot_ax18_nonwifi
+name: cmiot_ax18_lean_nonwifi
 
 on:
   repository_dispatch:
@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt-gl-ax1800.git
+  REPO_URL: https://github.com/KK2018gh/openwrt-gl-ax1800.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/cmiot_ax18_nonwifi.config
