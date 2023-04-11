@@ -20,12 +20,12 @@ echo "src-git kenzo https://github.com/kenzok8/small-package.git" >> "feeds.conf
 echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
 
 #NSS源修改
-sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-clients/Makefile
-sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-dp/Makefile
-sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-drv/Makefile
-sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-ecm/Makefile
-sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-ssdk-shell/Makefile
-sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-ssdk/Makefile
+# sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-clients/Makefile
+# sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-dp/Makefile
+# sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-drv/Makefile
+# sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-nss-ecm/Makefile
+# sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-ssdk-shell/Makefile
+# sed -i 's#source.codeaurora.org/quic#git.codelinaro.org/clo#g' package/qca/qca-ssdk/Makefile
 
 # 修改最大连接数
 #sed -i 's/nf_conntrack_max=16384/nf_conntrack_max=65536/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
