@@ -105,7 +105,13 @@ jobs:
         make download -j8 V=s
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
-        
+    
+    - name: update golang
+      run: |
+        cd openwrt
+        rm -rf feeds/packages/lang/golang
+        git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+   
     - name: Compile the firmware
       id: compile
       run: |
