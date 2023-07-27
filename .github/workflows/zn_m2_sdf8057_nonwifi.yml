@@ -20,8 +20,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/KK2018gh/ipq6k.git
-  # REPO_URL: https://github.com/KK2018gh/ipq6000.git
+  # REPO_URL: https://github.com/KK2018gh/ipq6k.git
+  REPO_URL: https://github.com/KK2018gh/ipq6000.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/zn_m2_sdf8057_nonwifi.config
