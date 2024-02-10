@@ -129,7 +129,10 @@ jobs:
     
     - name: Check space usage
       if: (!cancelled())
-      run: df -hT
+      run: |
+        shopt -s extglob
+        rm -rf openwrt/staging_dir/!(*${{ env.MTARGET }}*|host|hostpkg) openwrt/build_dir/!(*${{ env.MTARGET }}*|host|hostpkg)
+        df -hT
     
     - name: Compile the firmware
       id: compile
