@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: x86_64_docker_op_lite
+name: x86_64_docke_op_lite
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/KK2018gh/lede.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./config/x86_64_docker_op_lite.config
+  CONFIG_FILE: ./config/x86_64_lxc_op_lite.config
   DIY_P1_SH: ./scripts/x86_64_docker_op.sh
   DIY_P2_SH: ./scripts/x86_64_docker_op2.sh
   UPLOAD_BIN_DIR: false
