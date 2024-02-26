@@ -3,8 +3,11 @@ name: test_x86_64
 on:
   workflow_dispatch:
   repository_dispatch:
-#  release:
-#    types: published
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 
 env:
   REPO_URL: https://github.com/KK2018gh/lede.git
@@ -13,8 +16,6 @@ env:
   CONFIG_FILE: ./config/x86_64_docker_op.config
   DIY_P1_SH: ./scripts/x86_64_docker_op.sh
   DIY_P2_SH: ./scripts/x86_64_docker_op2.sh
-  MRG_ADD_SH: x86_64/x86_64.sh
-#   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: false
   TZ: Asia/Shanghai
@@ -201,7 +202,7 @@ jobs:
           ${{ env.useVersionInfo }}
         artifacts: ${{ env.FIRMWARE }}/*
 
-- name: Delete workflow runs
+    - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
       with:
         retain_days: 1
