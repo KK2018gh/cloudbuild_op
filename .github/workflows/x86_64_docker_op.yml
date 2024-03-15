@@ -22,7 +22,7 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Check Server Performance
@@ -56,9 +56,9 @@ jobs:
     - name: Combine Disks
       uses: easimon/maximize-build-space@master
       with:
-        root-reserve-mb: 1024
+        root-reserve-mb: 2048
         swap-size-mb: 2048
-        temp-reserve-mb: 100
+        temp-reserve-mb: 200
         
     - name: Checkout
       uses: actions/checkout@main
