@@ -3,9 +3,7 @@ name: x86_64_docker_op
 on:
   workflow_dispatch:
   # schedule:
-  #  - cron: 0 19 * * *
-  schedule:
-    - cron: 0 23 1,16 * *
+  #   - cron: 0 23 1,16 * *
 
 env:
   REPO_URL: https://github.com/KK2018gh/lede.git
