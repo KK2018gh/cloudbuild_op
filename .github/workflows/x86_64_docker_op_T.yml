@@ -10,6 +10,7 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds/feeds.conf.default
   CONFIG_FILE: ./config/x86_64_docker_op.config
+  DIY_SCRIPT: ./scripts/x86_64_docker_op2.sh
   # DIY_P1_SH: ./scripts/x86_64_docker_op.sh
   # DIY_P2_SH: ./scripts/x86_64_docker_op2.sh
   CLASH_KERNEL: amd64
@@ -102,12 +103,12 @@ jobs:
       run: |
         [ -e files ] && mv files $OPENWRT_PATH/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $OPENWRT_PATH/.config
-        chmod +x $GITHUB_WORKSPACE/scripts/*.sh
-        # chmod +x $DIY_SCRIPT
+        # chmod +x $GITHUB_WORKSPACE/scripts/*.sh
+        chmod +x $DIY_SCRIPT
         cd $OPENWRT_PATH
         $GITHUB_WORKSPACE/$DIY_SCRIPT
         # $GITHUB_WORKSPACE/scripts/x86_64_docker_op.sh
-        $GITHUB_WORKSPACE/scripts/x86_64_docker_op2.sh
+        # $GITHUB_WORKSPACE/scripts/x86_64_docker_op2.sh
 
     - name: Download DL Package
       run: |
