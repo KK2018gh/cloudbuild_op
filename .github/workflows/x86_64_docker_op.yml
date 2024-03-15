@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   # schedule:
   #  - cron: 0 19 * * *
+  schedule:
+    - cron: 0 2 1,16 * *
 
 env:
   REPO_URL: https://github.com/KK2018gh/lede.git
