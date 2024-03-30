@@ -112,7 +112,7 @@ jobs:
         # $GITHUB_WORKSPACE/scripts/x86_64_docker_op.sh
         # $GITHUB_WORKSPACE/scripts/x86_64_docker_op2.sh
 
-    - name: Download DL Package
+    - name: Download Package
       run: |
         cd $OPENWRT_PATH
         make defconfig
