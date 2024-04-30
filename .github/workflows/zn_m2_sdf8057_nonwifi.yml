@@ -113,7 +113,7 @@ jobs:
         
     - name: Update & Install feeds
       run: |
-        cd $OPENWRT_PATH
+        cd openwrt
         ./scripts/feeds update -a && ./scripts/feeds install -a
         ./scripts/feeds update -a && ./scripts/feeds install -a
         # rm -rf feeds/packages/lang/golang
