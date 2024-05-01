@@ -125,7 +125,7 @@ jobs:
         ./scripts/feeds update -a && ./scripts/feeds install -a
         # rm -rf feeds/packages/lang/golang
         # git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
-        sed -i 's/ +libopenssl-legacy//g' feeds/smallpackage/shadowsocksr-libev/Makefile
+        sed -i 's/ +libopenssl-legacy//g' feeds/smallpackages/shadowsocksr-libev/Makefile
         
     #- name: update golang
     #  run: |
