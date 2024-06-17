@@ -49,13 +49,6 @@ jobs:
         large-packages: true
         docker-images: true
         swap-storage: true
-
-    - name: Free up disk space complete
-      run: |
-        echo "Free up disk space complete"
-        echo "=============================================================================="
-        df -hT
-        echo "=============================================================================="
         
     - name: Checkout
       uses: actions/checkout@main 
