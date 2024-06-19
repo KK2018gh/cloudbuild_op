@@ -113,11 +113,11 @@ jobs:
     #   cd openwrt
     #    git am -s < lede_add_ax6.patch
     
-    - name: Cache
-      uses: stupidloud/cachewrtbuild@main
-      with:
-        ccache: 'true'
-        prefix: ${{ github.workspace }}/openwrt        
+    # - name: Cache
+    #   uses: stupidloud/cachewrtbuild@main
+    #   with:
+    #     ccache: 'true'
+    #    prefix: ${{ github.workspace }}/openwrt        
     
     - name: Load custom feeds
       run: |
