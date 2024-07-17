@@ -24,3 +24,4 @@ echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default
 # echo "src-git ddns_go https://github.com/jeessy2/ddns-go.git" >> "feeds.conf.default"
 # echo "src-git luci_ddns_go https://github.com/sirpdboy/luci-app-ddns-go.git" >> "feeds.conf.default"
 # echo "src-git autotimeset  https://github.com/sirpdboy/luci-app-autotimeset" >> "feeds.conf.default"
+echo "src-git gecoosac https://github.com/lwb1978/openwrt-gecoosac.git" >> "feeds.conf.default"
