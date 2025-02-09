@@ -16,8 +16,8 @@
 
 
 # 移除要替换的包
-rm -rf feeds/luci/applications/luci-app-openclash
-rm -rf feeds/luci/applications/luci-app-passwall
+# rm -rf feeds/luci/applications/luci-app-openclash
+# rm -rf feeds/luci/applications/luci-app-passwall
 
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
