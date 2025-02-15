@@ -20,7 +20,7 @@ cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 cp -f feeds/smallpackage/chinadns-ng/Makefile feeds/packages/net/chinadns-ng/Makefile
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.6.51/g' package/base-files/files/bin/config_generate
+# sed -i 's/192.168.1.1/192.168.6.51/g' package/base-files/files/bin/config_generate
 
 # Enable Cache
 echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
