@@ -25,6 +25,9 @@ cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-op
 rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/smallpackage/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
+rm -rf feeds/packages/net/tcping
+cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
+
 rm -rf feeds/packages/net/v2ray-geodata
 cp -rf feeds/smallpackage/v2ray-geodata feeds/packages/net/v2ray-geodata
 
