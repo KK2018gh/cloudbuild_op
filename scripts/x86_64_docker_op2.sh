@@ -17,7 +17,8 @@ cp -rf feeds/smallpackage/msd_lite feeds/packages/net/msd_lite
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 
-cp -f feeds/smallpackage/chinadns-ng/Makefile feeds/packages/net/chinadns-ng/Makefile
+rm -rf feeds/packages/net/chinadns-ng
+cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
 
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-openclash
