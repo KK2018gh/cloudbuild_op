@@ -28,6 +28,7 @@ cp -f feeds/smallpackage/chinadns-ng/Makefile feeds/packages/net/chinadns-ng/Mak
 # Enable Cache
 echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
 
+# 移除要替换的包
 rm -rf feeds/luci/applications/luci-app-openclash
 rm -rf feeds/luci/applications/luci-app-passwall
 ./scripts/feeds update -a && ./scripts/feeds install -a
