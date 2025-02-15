@@ -131,8 +131,6 @@ jobs:
       run: |
         cd openwrt
         ./scripts/feeds update -a && ./scripts/feeds install -a
-        rm -rf feeds/luci/applications/luci-app-openclash
-        rm -rf feeds/luci/applications/luci-app-passwall
         ./scripts/feeds update -a && ./scripts/feeds install -a
 
         
