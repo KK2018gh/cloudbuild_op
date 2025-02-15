@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# 更新插件
+# 插件调整
 rm -rf feeds/packages/net/msd_lite
 cp -rf feeds/smallpackage/msd_lite feeds/packages/net/msd_lite
 
@@ -18,6 +18,12 @@ rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 
 cp -f feeds/smallpackage/chinadns-ng/Makefile feeds/packages/net/chinadns-ng/Makefile
+
+rm -rf feeds/luci/applications/luci-app-openclash
+cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-openclash
+
+rm -rf feeds/luci/applications/luci-app-passwall
+cp -rf feeds/smallpackage/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # rm -rf feeds/packages/net/miniupnpd
 # cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
@@ -28,7 +34,3 @@ cp -f feeds/smallpackage/chinadns-ng/Makefile feeds/packages/net/chinadns-ng/Mak
 # Enable Cache
 echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
 
-# 移除要替换的包
-# rm -rf feeds/luci/applications/luci-app-openclash
-# rm -rf feeds/luci/applications/luci-app-passwall
-# ./scripts/feeds update -a && ./scripts/feeds install -a
