@@ -10,6 +10,12 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+# 更新插件
+rm -rf feeds/packages/net/msd_lite
+cp -rf feeds/smallpackage/msd_lite feeds/packages/net/msd_lite
+
+cp -f feeds/smallpackage/chinadns-ng/Makefile feeds/packages/net/chinadns-ng/Makefile
+
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.6.51/g' package/base-files/files/bin/config_generate
 
