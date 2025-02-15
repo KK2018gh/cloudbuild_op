@@ -14,6 +14,9 @@
 rm -rf feeds/packages/net/msd_lite
 cp -rf feeds/smallpackage/msd_lite feeds/packages/net/msd_lite
 
+rm -rf feeds/packages/net/sing-box
+cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
+
 cp -f feeds/smallpackage/chinadns-ng/Makefile feeds/packages/net/chinadns-ng/Makefile
 
 # Modify default IP
