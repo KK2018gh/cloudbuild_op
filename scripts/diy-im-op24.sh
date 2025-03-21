@@ -16,3 +16,6 @@ cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
 
 rm -rf feeds/packages/net/xray-core
 cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
+
+rm -rf feeds/packages/net/miniupnpd
+cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
