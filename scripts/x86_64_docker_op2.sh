@@ -38,8 +38,8 @@ cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 rm -rf feeds/packages/net/miniupnpd
 cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
 
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+# rm -rf feeds/packages/lang/golang
+# git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 # Modify default IP
 # sed -i 's/192.168.1.1/192.168.6.51/g' package/base-files/files/bin/config_generate
