@@ -10,9 +10,9 @@ cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 rm -rf feeds/packages/net/v2ray-geodata
 cp -rf feeds/smallpackage/v2ray-geodata feeds/packages/net/v2ray-geodata
 
-# rm -rf feeds/packages/net/geoview
-# cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/geoview
-# cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
+rm -rf feeds/packages/net/geoview
+cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/geoview
+cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
 cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
 
 rm -rf feeds/packages/net/xray-core
