@@ -1,6 +1,9 @@
 # rm -rf feeds/packages/devel/gn
 # cp -rf feeds/smallpackage/gn feeds/packages/devel/gn
 
+rm -rf feeds/luci/applications/luci-app-openclash
+cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-openclash
+
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/KK2018gh/golang feeds/packages/lang/golang
 
