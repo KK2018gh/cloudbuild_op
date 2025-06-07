@@ -21,5 +21,8 @@ cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
 rm -rf feeds/packages/net/xray-core
 cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 
+rm -rf package/base-files/files/etc/banner
+cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
+
 # rm -rf feeds/packages/net/miniupnpd
 # cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
