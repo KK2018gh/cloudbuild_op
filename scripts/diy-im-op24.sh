@@ -1,6 +1,9 @@
 # rm -rf feeds/packages/devel/gn
 # cp -rf feeds/smallpackage/gn feeds/packages/devel/gn
 
+rm -rf package/base-files/files/etc/banner
+cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
+
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
@@ -20,9 +23,6 @@ cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
 
 rm -rf feeds/packages/net/xray-core
 cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
-
-rm -rf package/base-files/files/etc/banner
-cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
 # rm -rf feeds/packages/net/miniupnpd
 # cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
