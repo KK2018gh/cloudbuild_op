@@ -10,6 +10,9 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+rm -rf package/base-files/files/etc/banner
+cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
+
 # 插件调整
 rm -rf feeds/packages/net/msd_lite
 cp -rf feeds/smallpackage/msd_lite feeds/packages/net/msd_lite
