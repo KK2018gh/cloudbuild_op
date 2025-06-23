@@ -27,7 +27,7 @@ rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
 rm -rf feeds/luci/applications/luci-app-passwall
-cp -rf feeds/smallpackage/luci-app-passwall feeds/luci/applications/luci-app-passwall
+cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 rm -rf feeds/packages/net/tcping
 cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
