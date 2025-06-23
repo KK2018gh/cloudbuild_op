@@ -7,6 +7,9 @@ cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
+rm -rf feeds/luci/applications/luci-app-passwall
+cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
+
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/KK2018gh/golang feeds/packages/lang/golang
 
