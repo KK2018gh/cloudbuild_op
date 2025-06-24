@@ -40,6 +40,9 @@ cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 
 rm -rf feeds/smallpackage/luci-app-ssr-plus
 
+rm -rf feeds/packages/lang/golang
+cp -rf feeds/golang feeds/packages/lang/golang
+
 # rm -rf feeds/packages/net/miniupnpd
 # cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
 
