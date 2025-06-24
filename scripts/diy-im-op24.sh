@@ -11,7 +11,7 @@ rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/KK2018gh/golang feeds/packages/lang/golang
+cp -rf feeds/golang feeds/packages/lang/golang
 
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
