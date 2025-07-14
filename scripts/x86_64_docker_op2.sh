@@ -39,7 +39,8 @@ rm -rf feeds/packages/net/xray-core
 cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 
 rm -rf feeds/packages/net/miniupnpd
-cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
+cp -rf feeds/smallpackage/miniupnpd-iptables  feeds/packages/net/miniupnpd
+# cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
 
 # rm -rf feeds/packages/lang/golang
 # git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
