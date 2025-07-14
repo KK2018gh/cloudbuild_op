@@ -17,7 +17,7 @@ rm -rf feeds/packages/lang/golang
 cp -rf feeds/golang feeds/packages/lang/golang
 
 rm -rf feeds/luci/applications/luci-app-ssr-plus
-# git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/luci/applications/luci-app-ssr-plus
+cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
