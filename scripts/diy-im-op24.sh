@@ -19,7 +19,7 @@ cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwal
 git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
 rm -rf feeds/packages/lang/golang
 cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
-rm -rf feeds/lean_packages
+# rm -rf feeds/lean_packages
 
 rm -rf feeds/luci/applications/luci-app-ssr-plus
 cp -rf feeds/smallpackage/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
@@ -33,10 +33,10 @@ cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 rm -rf feeds/packages/net/v2ray-geodata
 cp -rf feeds/smallpackage/v2ray-geodata feeds/packages/net/v2ray-geodata
 
-rm -rf feeds/packages/net/geoview
-cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/geoview
-cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
-cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
+# rm -rf feeds/packages/net/geoview
+# cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/geoview
+# cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
+# cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
 
 rm -rf feeds/packages/net/xray-core
 cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
