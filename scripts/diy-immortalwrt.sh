@@ -21,4 +21,4 @@
 # echo 'src-git settings https://github.com/KK2018gh/cloudbuild_settings.git' >>feeds.conf.default
 echo "src-git smallpackage https://github.com/kenzok8/small-package.git" >> "feeds.conf.default"
 # echo "src-git smallpackage https://github.com/KK2018gh/small-package.git" >> "feeds.conf.default"
-echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
+# echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
