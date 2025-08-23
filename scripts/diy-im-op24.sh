@@ -1,22 +1,27 @@
 # rm -rf feeds/packages/devel/gn
 # cp -rf feeds/smallpackage/gn feeds/packages/devel/gn
 
-rm -rf feeds/packages/net/chinadns-ng
-cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
+# rm -rf feeds/packages/net/chinadns-ng
+# cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
 
+git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
+git clone https://github.com/vernesong/OpenClash.git feeds/OpenClash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
+git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
 rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
 rm -rf feeds/packages/lang/golang
 cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
+rm -rf feeds/lean_packages
 
+git clone https://github.com/fw876/helloworld feeds/helloworld
 rm -rf feeds/luci/applications/luci-app-ssr-plus
 cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
