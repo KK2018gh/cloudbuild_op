@@ -20,7 +20,7 @@
 # rm -rf feeds/luci/applications/luci-app-passwall
 
 # Add a feed source
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+# echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git settings https://github.com/KK2018gh/cloudbuild_settings.git' >>feeds.conf.default
 echo "src-git smallpackage https://github.com/KK2018gh/small-package.git" >> "feeds.conf.default"
