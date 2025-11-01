@@ -21,8 +21,9 @@ rm -rf feeds/packages/lang/golang
 cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 # rm -rf feeds/lean_packages
 
+git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
 rm -rf feeds/luci/applications/luci-app-ssr-plus
-cp -rf feeds/smallpackage/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
+cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
