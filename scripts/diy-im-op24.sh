@@ -4,7 +4,7 @@
 # rm -rf feeds/packages/net/chinadns-ng
 # cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
 
-# 自定义banner
+# 替换banner
 git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
