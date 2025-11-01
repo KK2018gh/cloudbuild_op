@@ -8,7 +8,7 @@ git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
-# git clone https://github.com/vernesong/OpenClash.git feeds/OpenClash
+git clone --depth=1 https://github.com/vernesong/OpenClash.git feeds/OpenClash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
