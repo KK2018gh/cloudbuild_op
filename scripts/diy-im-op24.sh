@@ -27,8 +27,8 @@ cp -rf feeds/smallpackage/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 
-# rm -rf feeds/packages/sing-box
-# cp -rf feeds/smallpackage/sing-box feeds/packages/sing-box
+rm -rf feeds/packages/net/hysteria
+cp -rf feeds/smallpackage/hysteria feeds/packages/net/hysteria
 
 rm -rf feeds/packages/net/v2ray-geodata
 cp -rf feeds/smallpackage/v2ray-geodata feeds/packages/net/v2ray-geodata
