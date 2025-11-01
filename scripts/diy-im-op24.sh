@@ -25,6 +25,7 @@ git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
 rm -rf feeds/luci/applications/luci-app-ssr-plus
 cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
+git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 
