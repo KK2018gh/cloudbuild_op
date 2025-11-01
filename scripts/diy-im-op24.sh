@@ -26,9 +26,12 @@ cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 
 # 替换SSR Plus源
 git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
+cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
+cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
 rm -rf feeds/luci/applications/luci-app-ssr-plus
 cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
+# smallpackage
 git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
