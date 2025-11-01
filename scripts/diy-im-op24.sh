@@ -44,6 +44,9 @@ cp -rf feeds/smallpackage/geoview feeds/packages/net/geoview
 # cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
 # cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
 
+rm -rf feeds/packages/net/tcping
+cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
+ 
 rm -rf feeds/packages/net/xray-core
 cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 
