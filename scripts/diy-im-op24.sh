@@ -4,14 +4,17 @@
 # rm -rf feeds/packages/net/chinadns-ng
 # cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
 
+# 自定义banner
 git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
+# 替换OpenClash源
 git clone --depth=1 https://github.com/vernesong/OpenClash.git feeds/OpenClash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
+# 替换passwall源
 git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
 rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
@@ -21,6 +24,7 @@ rm -rf feeds/packages/lang/golang
 cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 # rm -rf feeds/lean_packages
 
+# 替换SSR Plus源
 git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
 rm -rf feeds/luci/applications/luci-app-ssr-plus
 cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
