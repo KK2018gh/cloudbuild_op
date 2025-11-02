@@ -15,10 +15,10 @@
 
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-# echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
-# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # echo 'src-git golang https://github.com/KK2018gh/golang.git' >>feeds.conf.default
 # echo 'src-git settings https://github.com/KK2018gh/cloudbuild_settings.git' >>feeds.conf.default
-# echo "src-git smallpackage https://github.com/kenzok8/small-package.git" >> "feeds.conf.default"
+echo "src-git smallpackage https://github.com/kenzok8/small-package.git" >> "feeds.conf.default"
 # echo "src-git smallpackage https://github.com/KK2018gh/small-package.git" >> "feeds.conf.default"
 # echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
