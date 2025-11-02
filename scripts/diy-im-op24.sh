@@ -9,10 +9,6 @@ git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
-# 替换OpenClash源
-git clone --depth=1 https://github.com/vernesong/OpenClash.git feeds/OpenClash
-rm -rf feeds/luci/applications/luci-app-openclash
-cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
 # 替换passwall源
 git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
@@ -34,6 +30,11 @@ cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-p
 
 # smallpackage
 git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
+
+# 替换OpenClash源
+rm -rf feeds/luci/applications/luci-app-openclash
+cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-openclash
+
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 
