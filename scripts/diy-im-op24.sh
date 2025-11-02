@@ -9,9 +9,12 @@ git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
+# 替换OpenClash源
+rm -rf feeds/luci/applications/luci-app-openclash
+cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
 # 替换passwall源
-git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
+# git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
 rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
@@ -22,18 +25,14 @@ cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 # rm -rf feeds/lean_packages
 
 # 替换SSR Plus源
-git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
+# git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
 cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
 cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
 rm -rf feeds/luci/applications/luci-app-ssr-plus
 cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 # smallpackage
-git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
-
-# 替换OpenClash源
-rm -rf feeds/luci/applications/luci-app-openclash
-cp -rf feeds/smallpackage/luci-app-openclash feeds/luci/applications/luci-app-openclash
+# git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
 
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
