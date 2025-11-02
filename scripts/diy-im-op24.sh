@@ -54,6 +54,9 @@ cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
 rm -rf feeds/packages/net/xray-core
 cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 
+rm -rf package/network/utils/fullconenat-nft
+cp -rf feeds/smallpackage/fullconenat-nft package/network/utils/fullconenat-nft
+
 # rm -rf feeds/packages/net/miniupnpd
 # cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
 
