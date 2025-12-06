@@ -59,7 +59,7 @@ cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 # rm -rf package/network/utils/fullconenat-nft
 # cp -rf feeds/lean/package/network/services/fullconenat-nft package/network/utils/fullconenat-nft
 
-rm -rf feeds/packages/net/miniupnpd
-cp -rf feeds/lean_packages/net/miniupnpd feeds/packages/net/miniupnpd
+# rm -rf feeds/packages/net/miniupnpd
+# cp -rf feeds/lean_packages/net/miniupnpd feeds/packages/net/miniupnpd
 
 # sed -i 's/192.168.1.1/192.168.6.51/g' package/base-files/files/bin/config_generate
