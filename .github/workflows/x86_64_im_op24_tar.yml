@@ -24,8 +24,8 @@ env:
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/x86_64_im_op24_tar.config
-  DIY_P1_SH: ./scripts/diy-immortalwrt.sh
-  DIY_P2_SH: ./scripts/diy-im-op24.sh
+  DIY_P1_SH: ./scripts/im24-1.sh
+  DIY_P2_SH: ./scripts/im24-2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
