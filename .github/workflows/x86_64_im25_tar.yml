@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
   REPO_BRANCH: openwrt-25.12
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./config/x86_64_im_op24_tar.config
+  CONFIG_FILE: ./config/x86_64_im25_tar.config
   DIY_P1_SH: ./scripts/im25-1.sh
   DIY_P2_SH: ./scripts/im25-2.sh
   UPLOAD_BIN_DIR: false
