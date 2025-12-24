@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: ZN_M2_im_nowifi
+name: zn_m2_im_nowifi
 
 on:
   repository_dispatch:
