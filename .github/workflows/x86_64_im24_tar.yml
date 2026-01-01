@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: x86_64_im_op24_tar
+name: x86_64_im24_tar.config
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./config/x86_64_im_op24_tar.config
+  CONFIG_FILE: ./config/x86_64_im24_tar.config
   DIY_P1_SH: ./scripts/im24-1.sh
   DIY_P2_SH: ./scripts/im24-2.sh
   UPLOAD_BIN_DIR: false
