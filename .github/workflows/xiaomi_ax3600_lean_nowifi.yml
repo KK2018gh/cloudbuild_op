@@ -24,8 +24,8 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/xiaomi_ax3600_lean_nowifi.config
-  DIY_P1_SH: ./scripts/x86_64_docker_op.sh
-  DIY_P2_SH: ./scripts/x86_64_docker_op2.sh
+  DIY_P1_SH: ./scripts/im24-1.sh
+  DIY_P2_SH: ./scripts/lede.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
