@@ -22,3 +22,4 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 echo "src-git smallpackage https://github.com/kenzok8/small-package.git" >> "feeds.conf.default"
 # echo "src-git smallpackage https://github.com/KK2018gh/small-package.git" >> "feeds.conf.default"
 # echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
+echo 'src-git rtp2httpd https://github.com/stackia/rtp2httpd.git' >>feeds.conf.default
