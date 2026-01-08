@@ -4,6 +4,11 @@
 # rm -rf feeds/packages/net/chinadns-ng
 # cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
 
+# luci-app-accesscontrol
+git clone https://github.com/coolsnowwolf/luci.git feeds/lean_luci
+rm -rf feeds/luci/applications/luci-app-accesscontrol
+cp -rf feeds/lean_luci/applications/luci-app-accesscontrol /feeds/luci/applications/luci-app-accesscontrol
+
 # 替换banner
 git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
