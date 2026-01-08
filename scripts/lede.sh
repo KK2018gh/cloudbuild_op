@@ -1,8 +1,8 @@
 # rm -rf feeds/packages/devel/gn
 # cp -rf feeds/smallpackage/gn feeds/packages/devel/gn
 
-# rm -rf feeds/packages/net/chinadns-ng
-# cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
+rm -rf feeds/packages/net/chinadns-ng
+cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
 
 # 替换banner
 git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
