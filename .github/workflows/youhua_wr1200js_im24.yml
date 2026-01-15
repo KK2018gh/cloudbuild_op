@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: youhua_wr1200js_im
+name: youhua_wr1200js_im24_rtp2httpd
 
 on:
   repository_dispatch:
@@ -21,9 +21,9 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./config/youhua_wr1200js.config
+  CONFIG_FILE: ./config/youhua_wr1200js_im24_rtp2httpd.config
   DIY_P1_SH: ./scripts/im24-1.sh
   DIY_P2_SH: ./scripts/im25-2.sh
   UPLOAD_BIN_DIR: false
