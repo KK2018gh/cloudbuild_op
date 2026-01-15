@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: x86_64_im24_tar.config
+name: x86_64_im24_tar
 
 on:
   repository_dispatch:
