@@ -21,8 +21,8 @@ on:
 
 env:
   TARGET: xg_040g_md_im
-  REPO_URL: https://github.com/immortalwrt/immortalwrt.git
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/bingoguo93/immortalwrt.git
+  REPO_BRANCH: openwrt-25.12
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/xg_040g_md_im.config
   DIY_P1_SH: ./scripts/im25-1.sh
