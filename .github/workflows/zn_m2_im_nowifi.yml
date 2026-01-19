@@ -20,6 +20,7 @@ on:
         default: 'false'
 
 env:
+  TARGET: zn_m2_im_nowifi
   REPO_URL: https://github.com/VIKINGYFY/immortalwrt.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
@@ -257,8 +258,13 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
+        body: |
+          源码：${{env.REPO_URL}}
+          分支：${{env.REPO_BRANCH}}
+          机型：${{env.TARGET}}
+          配置：${{env.CONFIG_FILE}}
+          内核：6.12
 
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
