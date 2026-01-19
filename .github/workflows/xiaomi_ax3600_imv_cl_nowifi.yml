@@ -257,8 +257,14 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
+        body: |
+          云编译openwrt固件。
+          
+          源码：${{env.REPO_URL}}
+          分支：${{env.REPO_BRANCH}}
+          平台：${{env.CONFIG_FILE}}
+        
 
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
