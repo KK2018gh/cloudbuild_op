@@ -263,11 +263,12 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{env.TARGET}}_${{ steps.tag.outputs.release_tag }}
+        tag_name: ${{ steps.tag.outputs.release_tag }}
         files: ${{ env.FIRMWARE }}/*
         body: |
           源码：${{env.REPO_URL}}
           分支：${{env.REPO_BRANCH}}
+          机型：${{env.TARGET}}
           配置：${{env.CONFIG_FILE}}
           内核：5.10
 
