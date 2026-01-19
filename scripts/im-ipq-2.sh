@@ -30,9 +30,9 @@ cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 # rm -rf feeds/lean_packages
 
 # 替换homeproxy v大自用版
-git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
-rm -rf feeds/luci/applications/luci-app-homeproxy
-cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
+# git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
+# rm -rf feeds/luci/applications/luci-app-homeproxy
+# cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
 
 # 替换SSR Plus
 # git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
