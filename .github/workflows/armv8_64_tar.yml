@@ -20,6 +20,7 @@ on:
         default: 'false'
 
 env:
+  TARGET: armv8_64_tar
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
@@ -262,9 +263,15 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: release.txt
+        tag_name: ${{env.TARGET}}_${{ steps.tag.outputs.release_tag }}
         files: ${{ env.FIRMWARE }}/*
+        body: |
+          云编译openwrt固件。
+          
+          源码：${{env.REPO_URL}}
+          分支：${{env.REPO_BRANCH}}
+          配置：${{env.CONFIG_FILE}}
+          内核：6.6
 
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
