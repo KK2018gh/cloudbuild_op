@@ -266,8 +266,6 @@ jobs:
         tag_name: ${{env.TARGET}}_${{ steps.tag.outputs.release_tag }}
         files: ${{ env.FIRMWARE }}/*
         body: |
-          云编译openwrt固件。
-          
           源码：${{env.REPO_URL}}
           分支：${{env.REPO_BRANCH}}
           配置：${{env.CONFIG_FILE}}
