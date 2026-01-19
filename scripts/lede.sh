@@ -7,11 +7,11 @@ git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/lede/banner package/base-files/files/etc/banner
 
-# 替换OpenClash源
+# 替换OpenClash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
-# 替换passwall源
+# 替换passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
 rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
@@ -22,7 +22,12 @@ cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwal
 # cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 # rm -rf feeds/lean_packages
 
-# 替换SSR Plus源
+# 替换homeproxy v大自用版
+git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
+rm -rf feeds/luci/applications/luci-app-homeproxy
+cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
+
+# 替换SSR Plus
 # git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
 cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
 cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
