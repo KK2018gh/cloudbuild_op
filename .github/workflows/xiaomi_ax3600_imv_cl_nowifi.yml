@@ -20,6 +20,7 @@ on:
         default: 'false'
 
 env:
+  TARGET: xiaomi_ax3600
   REPO_URL: https://github.com/VIKINGYFY/immortalwrt.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
@@ -256,16 +257,15 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.tag.outputs.release_tag }}
+        tag_name: ${{env.TARGET}}_${{ steps.tag.outputs.release_tag }}
         files: ${{ env.FIRMWARE }}/*
         body: |
           云编译openwrt固件。
           
           源码：${{env.REPO_URL}}
           分支：${{env.REPO_BRANCH}}
-          平台：${{env.CONFIG_FILE}}
+          配置：${{env.CONFIG_FILE}}
         
-
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
       with:
