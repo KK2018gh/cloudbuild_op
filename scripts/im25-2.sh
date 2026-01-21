@@ -15,8 +15,8 @@ cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openc
 
 # 替换passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
-rm -rf feeds/luci/applications/luci-app-passwall
-cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
+# rm -rf feeds/luci/applications/luci-app-passwall
+# cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # 更新golang
 # git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
