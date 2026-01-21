@@ -24,9 +24,9 @@ rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # 更新golang
-git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
-rm -rf feeds/packages/lang/golang
-cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
+# git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
+# rm -rf feeds/packages/lang/golang
+# cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 # rm -rf feeds/lean_packages
 
 # 替换homeproxy v大自用版
