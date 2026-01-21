@@ -25,16 +25,16 @@ cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwal
 # rm -rf feeds/lean_packages
 
 # 替换homeproxy v大自用版
-git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
-rm -rf feeds/luci/applications/luci-app-homeproxy
-cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
+# git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
+# rm -rf feeds/luci/applications/luci-app-homeproxy
+# cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
 
 # 替换SSR Plus
 # git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
-cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
-cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
-rm -rf feeds/luci/applications/luci-app-ssr-plus
-cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
+# cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
+# cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+# rm -rf feeds/luci/applications/luci-app-ssr-plus
+# cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 # smallpackage
 git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
@@ -45,8 +45,8 @@ cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 rm -rf feeds/packages/net/hysteria
 cp -rf feeds/smallpackage/hysteria feeds/packages/net/hysteria
 
-rm -rf feeds/packages/net/v2ray-geodata
-cp -rf feeds/smallpackage/v2ray-geodata feeds/packages/net/v2ray-geodata
+# rm -rf feeds/packages/net/v2ray-geodata
+# cp -rf feeds/smallpackage/v2ray-geodata feeds/packages/net/v2ray-geodata
 
 rm -rf feeds/packages/net/geoview
 cp -rf feeds/smallpackage/geoview feeds/packages/net/geoview
@@ -56,8 +56,8 @@ cp -rf feeds/smallpackage/geoview feeds/packages/net/geoview
 rm -rf feeds/packages/net/tcping
 cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
  
-rm -rf feeds/packages/net/xray-core
-cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
+# rm -rf feeds/packages/net/xray-core
+# cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 
 # fullcone补丁
 # git clone https://github.com/coolsnowwolf/lede.git feeds/lean
