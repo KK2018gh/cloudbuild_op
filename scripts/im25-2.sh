@@ -10,8 +10,8 @@ rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
 # 替换OpenClash
-rm -rf feeds/luci/applications/luci-app-openclash
-cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
+# rm -rf feeds/luci/applications/luci-app-openclash
+# cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
 # 替换passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
