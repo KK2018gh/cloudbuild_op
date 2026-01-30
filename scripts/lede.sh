@@ -23,16 +23,16 @@ cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwal
 # rm -rf feeds/lean_packages
 
 # 替换homeproxy v大自用版
-git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
-rm -rf feeds/luci/applications/luci-app-homeproxy
-cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
+# git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
+# rm -rf feeds/luci/applications/luci-app-homeproxy
+# cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
 
 # 替换SSR Plus
 # git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
-cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
-cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
-rm -rf feeds/luci/applications/luci-app-ssr-plus
-cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
+# cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
+# cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+# rm -rf feeds/luci/applications/luci-app-ssr-plus
+# cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 # smallpackage
 # git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
