@@ -41,7 +41,7 @@ cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwal
 # cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 # smallpackage
-git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
+# git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
 
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
@@ -57,8 +57,8 @@ cp -rf feeds/smallpackage/geoview feeds/packages/net/geoview
 # cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
 # cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
 
-# rm -rf feeds/packages/net/tcping
-# cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
+rm -rf feeds/packages/net/tcping
+cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
  
 # rm -rf feeds/packages/net/xray-core
 # cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
