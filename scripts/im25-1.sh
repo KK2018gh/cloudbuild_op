@@ -21,6 +21,6 @@ echo 'src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' >>
 echo 'src-git rtp2httpd https://github.com/stackia/rtp2httpd.git' >>feeds.conf.default
 # echo 'src-git golang https://github.com/KK2018gh/golang.git' >>feeds.conf.default
 # echo 'src-git settings https://github.com/KK2018gh/cloudbuild_settings.git' >>feeds.conf.default
-echo "src-git smallpackage https://github.com/kenzok8/small-package.git" >> "feeds.conf.default"
+# echo "src-git smallpackage https://github.com/kenzok8/small-package.git" >> "feeds.conf.default"
 # echo "src-git smallpackage https://github.com/KK2018gh/small-package.git" >> "feeds.conf.default"
 # echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
