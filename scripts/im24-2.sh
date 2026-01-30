@@ -9,6 +9,9 @@ git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
+rm -rf package/feeds/packages/libffi/Makefile
+cp -rf feeds/settings/libffi/Makefile package/feeds/packages/libffi/Makefile
+
 # 替换OpenClash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
@@ -19,22 +22,22 @@ rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # 更新golang
-git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
-rm -rf feeds/packages/lang/golang
-cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
+# git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
+# rm -rf feeds/packages/lang/golang
+# cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 # rm -rf feeds/lean_packages
 
 # 替换homeproxy v大自用版
-git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
-rm -rf feeds/luci/applications/luci-app-homeproxy
-cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
+# git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
+# rm -rf feeds/luci/applications/luci-app-homeproxy
+# cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
 
 # 替换SSR Plus
 # git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
-cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
-cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
-rm -rf feeds/luci/applications/luci-app-ssr-plus
-cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
+# cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
+# cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+# rm -rf feeds/luci/applications/luci-app-ssr-plus
+# cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 # smallpackage
 # git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
