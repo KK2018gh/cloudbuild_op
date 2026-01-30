@@ -6,11 +6,12 @@
 
 # 替换banner
 git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
+
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
-rm -rf package/feeds/packages/libffi/Makefile
-cp -rf feeds/settings/libffi/Makefile package/feeds/packages/libffi/Makefile
+rm -rf feeds/packages/libs/libffi/Makefile
+cp -rf feeds/settings/libffi/Makefile feeds/packages/libs/libffi/Makefile
 
 # 替换OpenClash
 rm -rf feeds/luci/applications/luci-app-openclash
