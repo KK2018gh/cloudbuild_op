@@ -43,11 +43,11 @@ cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwal
 # smallpackage
 git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
 
-# rm -rf feeds/packages/net/sing-box
-# cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
+rm -rf feeds/packages/net/sing-box
+cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
 
-# rm -rf feeds/packages/net/hysteria
-# cp -rf feeds/smallpackage/hysteria feeds/packages/net/hysteria
+rm -rf feeds/packages/net/hysteria
+cp -rf feeds/smallpackage/hysteria feeds/packages/net/hysteria
 
 # rm -rf feeds/packages/net/v2ray-geodata
 # cp -rf feeds/smallpackage/v2ray-geodata feeds/packages/net/v2ray-geodata
