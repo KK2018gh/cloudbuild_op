@@ -21,8 +21,8 @@ cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openc
 
 # 替换passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
- rm -rf feeds/luci/applications/luci-app-passwall
- cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
+# rm -rf feeds/luci/applications/luci-app-passwall
+# cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # 更新golang
 # git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
@@ -62,8 +62,8 @@ cp -rf feeds/smallpackage/geoview feeds/packages/net/geoview
 # rm -rf feeds/packages/net/tcping
 # cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
  
-# rm -rf feeds/packages/net/xray-core
-# cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
+rm -rf feeds/packages/net/xray-core
+cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
 
 # fullcone补丁
 # git clone https://github.com/coolsnowwolf/lede.git feeds/lean
