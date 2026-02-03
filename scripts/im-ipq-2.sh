@@ -20,7 +20,7 @@ rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
 # 替换passwall
-git clone https://github.com/Openwrt-Passwall/openwrt-passwall feeds/passwall
+git clone --depth 1 https://github.com/Openwrt-Passwall/openwrt-passwall feeds/passwall
 rm -rf feeds/luci/applications/luci-app-passwall
 cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
