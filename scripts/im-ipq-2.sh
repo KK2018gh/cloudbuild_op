@@ -18,11 +18,6 @@ git clone --depth 1 https://github.com/vernesong/OpenClash feeds/openclash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
-# 替换passwall
-git clone https://github.com/Openwrt-Passwall/openwrt-passwall feeds/passwall
-rm -rf feeds/luci/applications/luci-app-passwall
-cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
-
 # 更新golang
 # git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
 # rm -rf feeds/packages/lang/golang
@@ -40,6 +35,11 @@ cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwal
 # cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
 # rm -rf feeds/luci/applications/luci-app-ssr-plus
 # cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
+
+# 替换passwall
+git clone https://github.com/Openwrt-Passwall/openwrt-passwall feeds/passwall
+rm -rf feeds/luci/applications/luci-app-passwall
+cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # smallpackage
 # git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
