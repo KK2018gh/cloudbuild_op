@@ -17,15 +17,6 @@ cp -rf feeds/settings/libffi/Makefile feeds/packages/libs/libffi/Makefile
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
-# 替换passwall
-# 移除 openwrt feeds 自带的核心库
-# rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
-# git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages package/passwall-packages
-
-# 移除 openwrt feeds 过时的luci版本
-# rm -rf feeds/luci/applications/luci-app-passwall
-# git clone https://github.com/Openwrt-Passwall/openwrt-passwall package/passwall-luci
-
 # 更新golang
 # git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
 # rm -rf feeds/packages/lang/golang
@@ -44,29 +35,46 @@ cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openc
 # rm -rf feeds/luci/applications/luci-app-ssr-plus
 # cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
-# smallpackage
+# 替换passwall
+git clone https://github.com/Openwrt-Passwall/openwrt-passwall feeds/passwall
+rm -rf feeds/luci/applications/luci-app-passwall
+cp -rf feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
+# passwall-packages
 # git clone https://github.com/kenzok8/small-package.git feeds/smallpackage
+git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages feeds/passwall-packages
+
+rm -rf feeds/packages/net/chinadns-ng
+cp -rf feeds/passwall-packages/chinadns-ng feeds/packages/net/chinadns-ng
+
+rm -rf feeds/packages/net/dns2socks
+cp -rf feeds/passwall-packages/dns2socks feeds/packages/net/dns2socks
+
+rm -rf feeds/packages/net/ipt2socks
+cp -rf feeds/passwall-packages/ipt2socks feeds/packages/net/ipt2socks
+
+rm -rf feeds/packages/net/microsocks
+cp -rf feeds/passwall-packages/microsocks feeds/packages/net/microsocks
 
 rm -rf feeds/packages/net/sing-box
-cp -rf feeds/smallpackage/sing-box feeds/packages/net/sing-box
+cp -rf feeds/passwall-packages/sing-box feeds/packages/net/sing-box
 
 rm -rf feeds/packages/net/hysteria
-cp -rf feeds/smallpackage/hysteria feeds/packages/net/hysteria
+cp -rf feeds/passwall-packages/hysteria feeds/packages/net/hysteria
 
 # rm -rf feeds/packages/net/v2ray-geodata
 # cp -rf feeds/smallpackage/v2ray-geodata feeds/packages/net/v2ray-geodata
 
 rm -rf feeds/packages/net/geoview
-cp -rf feeds/smallpackage/geoview feeds/packages/net/geoview
+cp -rf feeds/passwall-packages/geoview feeds/packages/net/geoview
 # cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
 # cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
 
 rm -rf feeds/packages/net/tcping
-cp -rf feeds/smallpackage/tcping feeds/packages/net/tcping
+cp -rf feeds/passwall-packages/tcping feeds/packages/net/tcping
  
 rm -rf feeds/packages/net/xray-core
-cp -rf feeds/smallpackage/xray-core feeds/packages/net/xray-core
+cp -rf feeds/passwall-packages/xray-core feeds/packages/net/xray-core
 
 # fullcone补丁
 # git clone https://github.com/coolsnowwolf/lede.git feeds/lean
