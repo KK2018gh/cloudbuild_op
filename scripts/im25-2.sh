@@ -14,6 +14,7 @@ rm -rf feeds/packages/libs/libffi/Makefile
 cp -rf feeds/settings/libffi/Makefile feeds/packages/libs/libffi/Makefile
 
 # 替换OpenClash
+git clone --depth 1 https://github.com/vernesong/OpenClash feeds/openclash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
