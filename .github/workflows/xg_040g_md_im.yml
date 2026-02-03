@@ -26,7 +26,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/xg_040g_md_im.config
   DIY_P1_SH: ./scripts/im25-1.sh
-  DIY_P2_SH: ./scripts/im25-2.sh
+  DIY_P2_SH: ./scripts/an7581.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
