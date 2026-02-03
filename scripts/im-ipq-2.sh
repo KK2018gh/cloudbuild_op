@@ -47,6 +47,15 @@ git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages feeds/pa
 rm -rf feeds/packages/net/chinadns-ng
 cp -rf feeds/passwall-packages/chinadns-ng feeds/packages/net/chinadns-ng
 
+rm -rf feeds/packages/net/dns2socks
+cp -rf feeds/passwall-packages/dns2socks feeds/packages/net/dns2socks
+
+rm -rf feeds/packages/net/ipt2socks
+cp -rf feeds/passwall-packages/ipt2socks feeds/packages/net/ipt2socks
+
+rm -rf feeds/packages/net/microsocks
+cp -rf feeds/passwall-packages/microsocks feeds/packages/net/microsocks
+
 rm -rf feeds/packages/net/sing-box
 cp -rf feeds/passwall-packages/sing-box feeds/packages/net/sing-box
 
