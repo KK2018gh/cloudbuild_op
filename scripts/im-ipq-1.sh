@@ -16,7 +16,7 @@
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git' >>feeds.conf.default
-echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
+# echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 # echo 'src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' >> feeds.conf.default
 echo 'src-git rtp2httpd https://github.com/stackia/rtp2httpd.git' >>feeds.conf.default
 # echo "src-git smallpackage https://github.com/KK2018gh/small-package.git" >> "feeds.conf.default"
