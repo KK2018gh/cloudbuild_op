@@ -79,8 +79,9 @@ cp -rf feeds/passwall-packages/hysteria feeds/packages/net/hysteria
 
 rm -rf feeds/packages/net/geoview
 cp -rf feeds/passwall-packages/geoview feeds/packages/net/geoview
+
 # cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/net/v2ray-geoview
-# cp -rf feeds/smallpackage/v2ray-geoview feeds/packages/geoview
+cp -rf feeds/passwall-packages/trojan-plus feeds/packages/net/trojan-plus
 
 rm -rf feeds/packages/net/tcping
 cp -rf feeds/passwall-packages/tcping feeds/packages/net/tcping
