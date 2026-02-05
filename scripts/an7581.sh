@@ -10,6 +10,11 @@ git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf target/linux/airoha/an7581/base-files/etc/board.d/02_network
 cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/02_network target/linux/airoha/an7581/base-files/etc/board.d/02_network
 
+cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/an7581-bell_xg-040g-md.dts target/linux/airoha/dts/an7581-bell_xg-040g-md.dts
+
+rm -rf target/linux/airoha/image/an7581.mk
+cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/an7581.mk target/linux/airoha/image/an7581.mk
+
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
