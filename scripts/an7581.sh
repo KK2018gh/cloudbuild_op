@@ -15,6 +15,9 @@ cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/an7581-bell_xg-040g-md.dts t
 rm -rf target/linux/airoha/image/an7581.mk
 cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/an7581.mk target/linux/airoha/image/an7581.mk
 
+cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/430-v6.14-mtd-spinand-Introduce-a-way-to-avoid-raw-access.patch target/linux/generic/backport-6.12/430-v6.14-mtd-spinand-Introduce-a-way-to-avoid-raw-access.patch
+cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/431-v6.14-mtd-spinand-Add-support-for-SkyHigh-S35ML-3-family.patch target/linux/generic/backport-6.12/431-v6.14-mtd-spinand-Add-support-for-SkyHigh-S35ML-3-family.patch
+
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
