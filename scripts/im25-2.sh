@@ -74,8 +74,8 @@ cp -rf feeds/passwall-packages/geoview feeds/packages/net/geoview
 rm -rf feeds/packages/net/tcping
 cp -rf feeds/passwall-packages/tcping feeds/packages/net/tcping
  
-rm -rf feeds/packages/net/xray-core
-cp -rf feeds/passwall-packages/xray-core feeds/packages/net/xray-core
+# rm -rf feeds/packages/net/xray-core
+# cp -rf feeds/passwall-packages/xray-core feeds/packages/net/xray-core
 
 # fullcone补丁
 # git clone https://github.com/coolsnowwolf/lede.git feeds/lean
