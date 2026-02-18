@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: xg_040g_md_im
+name: xg_040g_md_op
 
 on:
   repository_dispatch:
@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  TARGET: xg_040g_md_im
+  TARGET: xg_040g_md_op
   REPO_URL: https://github.com/xiangtailiang/openwrt.git
   REPO_BRANCH: fork-main
   FEEDS_CONF: feeds.conf.default
