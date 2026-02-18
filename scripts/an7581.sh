@@ -7,13 +7,13 @@
 # 替换banner
 git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 
-rm -rf target/linux/airoha/an7581/base-files/etc/board.d/02_network
-cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/02_network target/linux/airoha/an7581/base-files/etc/board.d/02_network
+# rm -rf target/linux/airoha/an7581/base-files/etc/board.d/02_network
+# cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/02_network target/linux/airoha/an7581/base-files/etc/board.d/02_network
 
-cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/an7581-bell_xg-040g-md.dts target/linux/airoha/dts/an7581-bell_xg-040g-md.dts
+# cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/an7581-bell_xg-040g-md.dts target/linux/airoha/dts/an7581-bell_xg-040g-md.dts
 
-rm -rf target/linux/airoha/image/an7581.mk
-cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/an7581.mk target/linux/airoha/image/an7581.mk
+# rm -rf target/linux/airoha/image/an7581.mk
+# cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/an7581.mk target/linux/airoha/image/an7581.mk
 
 # cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/430-v6.14-mtd-spinand-Introduce-a-way-to-avoid-raw-access.patch target/linux/generic/backport-6.12/430-v6.14-mtd-spinand-Introduce-a-way-to-avoid-raw-access.patch
 # cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/431-v6.14-mtd-spinand-Add-support-for-SkyHigh-S35ML-3-family.patch target/linux/generic/backport-6.12/431-v6.14-mtd-spinand-Add-support-for-SkyHigh-S35ML-3-family.patch
