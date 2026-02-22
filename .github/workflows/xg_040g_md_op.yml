@@ -22,7 +22,7 @@ on:
 env:
   TARGET: xg_040g_md_op
   REPO_URL: https://github.com/xiangtailiang/openwrt.git
-  REPO_BRANCH: fork-main
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/xg_040g_md_op.config
   DIY_P1_SH: ./scripts/im25-1.sh
