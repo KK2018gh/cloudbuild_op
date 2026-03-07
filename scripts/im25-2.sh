@@ -30,11 +30,11 @@ cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openc
 # cp -rf feeds/homeproxy feeds/luci/applications/luci-app-homeproxy
 
 # 替换SSR Plus
-# git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
-# cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
-# cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
-# rm -rf feeds/luci/applications/luci-app-ssr-plus
-# cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
+git clone --depth=1 https://github.com/fw876/helloworld.git feeds/helloworld
+cp -rf feeds/helloworld/shadowsocks-libev feeds/packages/net/shadowsocks-libev
+cp -rf feeds/helloworld/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+rm -rf feeds/luci/applications/luci-app-ssr-plus
+cp -rf feeds/helloworld/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 # 替换passwall
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall feeds/passwall
