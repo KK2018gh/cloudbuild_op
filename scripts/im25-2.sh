@@ -85,4 +85,7 @@ cp -rf feeds/passwall-packages/tcping feeds/packages/net/tcping
 # rm -rf feeds/packages/net/miniupnpd
 # cp -rf feeds/smallpackage/miniupnpd feeds/packages/net/miniupnpd
 
+sed -i 's/libpcre/libpcre2/g'  feeds/smallpackage/shadowsocksr-libev/Makefile
+sed -i 's/libpcre/libpcre2/g'  feeds/smallpackage/shadowsocks-libev/Makefile
+
 sed -i 's/192.168.1.1/192.168.6.51/g' package/base-files/files/bin/config_generate
