@@ -23,7 +23,7 @@ git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 # cp -rf feeds/settings/ImmortalWRT/an7581/xg-040g-md/431-v6.14-mtd-spinand-Add-support-for-SkyHigh-S35ML-3-family.patch target/linux/generic/backport-6.12/431-v6.14-mtd-spinand-Add-support-for-SkyHigh-S35ML-3-family.patch
 
 rm -rf package/base-files/files/etc/banner
-cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
+cp -rf feeds/settings/ImmortalWRT/banner package/base-files/files/etc/banner
 
 rm -rf feeds/packages/libs/libffi/Makefile
 cp -rf feeds/settings/libffi/Makefile feeds/packages/libs/libffi/Makefile
