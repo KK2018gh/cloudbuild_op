@@ -5,8 +5,8 @@
 # cp -rf feeds/smallpackage/chinadns-ng feeds/packages/net/chinadns-ng
 
 # xg-040g-md 补丁
-git clone https://github.com/kkstone/Actions-ImmortalWrt-XG-040G-MD.git
-tar zxvf Actions-ImmortalWrt-XG-040G-MD/XG-040G-MD.tar.gz
+# git clone https://github.com/kkstone/Actions-ImmortalWrt-XG-040G-MD.git
+# tar zxvf Actions-ImmortalWrt-XG-040G-MD/XG-040G-MD.tar.gz
 
 # 替换banner
 git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
