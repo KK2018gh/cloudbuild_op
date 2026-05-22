@@ -10,8 +10,8 @@ git clone https://github.com/KK2018gh/cloudbuild_settings.git feeds/settings
 rm -rf package/base-files/files/etc/banner
 cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 
-rm -rf feeds/packages/libs/libffi/Makefile
-cp -rf feeds/settings/libffi/Makefile feeds/packages/libs/libffi/Makefile
+# rm -rf feeds/packages/libs/libffi/Makefile
+# cp -rf feeds/settings/libffi/Makefile feeds/packages/libs/libffi/Makefile
 
 # 替换OpenClash
 git clone --depth 1 https://github.com/vernesong/OpenClash feeds/openclash
@@ -19,9 +19,9 @@ rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
 # 更新golang
-# git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
-# rm -rf feeds/packages/lang/golang
-# cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
+git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
+rm -rf feeds/packages/lang/golang
+cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
 # rm -rf feeds/lean_packages
 
 # 替换homeproxy v大自用版
