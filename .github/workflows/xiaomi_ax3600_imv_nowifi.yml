@@ -258,7 +258,7 @@ jobs:
           分支：${{env.REPO_BRANCH}}
           机型：${{env.TARGET}}
           配置：${{env.CONFIG_FILE}}
-          内核：6.12
+          内核：6.18
         
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@v2
