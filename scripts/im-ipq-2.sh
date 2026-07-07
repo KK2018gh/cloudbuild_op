@@ -13,6 +13,13 @@ cp -rf feeds/settings/immortal/banner package/base-files/files/etc/banner
 rm -rf feeds/packages/libs/libffi/Makefile
 cp -rf feeds/settings/libffi/Makefile feeds/packages/libs/libffi/Makefile
 
+# 替换rtp2httpd
+rm -rf feeds/packages/net/rtp2httpd
+cp -rf feeds/rtp2httpd/openwrt-support/rtp2httpd feeds/packages/net/rtp2httpd
+
+rm -rf feeds/luci/applications/luci-app-rtp2httpd
+cp -rf feeds/rtp2httpd/openwrt-support/luci-app-rtp2httpd feeds/luci/applications/luci-app-rtp2httpd
+
 # 替换OpenClash
 git clone --depth 1 https://github.com/vernesong/OpenClash feeds/openclash
 rm -rf feeds/luci/applications/luci-app-openclash
