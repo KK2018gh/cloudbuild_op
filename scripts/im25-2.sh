@@ -18,6 +18,7 @@ git clone --depth 1 https://github.com/vernesong/OpenClash feeds/openclash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
+# 添加 Meta 内核
 curl -L -o clash-linux-amd64-compatible.tar.gz "https://github.com/vernesong/OpenClash/raw/core/dev/meta/clash-linux-amd64-compatible.tar.gz"
 tar -xzf clash-linux-amd64-compatible.tar.gz >/dev/null 2>&1
 # tar -xzf clash-linux-amd64-compatible.tar.gz -C package/luci-app-openclash/files/etc/openclash/core >/dev/null 2>&1
