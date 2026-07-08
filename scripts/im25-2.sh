@@ -18,6 +18,18 @@ git clone --depth 1 https://github.com/vernesong/OpenClash feeds/openclash
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/openclash/luci-app-openclash feeds/luci/applications/luci-app-openclash
 
+curl -L -o clash-linux-amd64-compatible.tar.gz "https://github.com/vernesong/OpenClash/raw/core/dev/meta/clash-linux-amd64-compatible.tar.gz"
+tar -xzf clash-linux-amd64-compatible.tar.gz >/dev/null 2>&1
+# tar -xzf clash-linux-amd64-compatible.tar.gz -C package/luci-app-openclash/files/etc/openclash/core >/dev/null 2>&1
+mv clash clash_meta >/dev/null 2>&1
+chmod +x clash_meta >/dev/null 2>&1
+mkdir -p package/luci-app-openclash/files/etc/openclash/core
+# mkdir -p files/etc/openclash/core
+# cp clash_meta files/etc/openclash/core/
+cp clash_meta package/luci-app-openclash/files/etc/openclash/core
+rm -rf clash-linux-amd64-compatible.tar.gz >/dev/null 2>&1
+rm -rf clash_meta >/dev/null 2>&1
+
 # 更新golang
 # git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
 # rm -rf feeds/packages/lang/golang
