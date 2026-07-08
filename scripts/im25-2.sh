@@ -24,10 +24,10 @@ tar -xzf clash-linux-amd64-compatible.tar.gz >/dev/null 2>&1
 # tar -xzf clash-linux-amd64-compatible.tar.gz -C package/luci-app-openclash/files/etc/openclash/core >/dev/null 2>&1
 mv clash clash_meta >/dev/null 2>&1
 chmod +x clash_meta >/dev/null 2>&1
-mkdir -p package/luci-app-openclash/files/etc/openclash/core
-# mkdir -p files/etc/openclash/core
-# cp clash_meta files/etc/openclash/core/
-cp clash_meta package/luci-app-openclash/files/etc/openclash/core
+# mkdir -p package/luci-app-openclash/files/etc/openclash/core
+mkdir -p files/etc/openclash/core
+cp clash_meta files/etc/openclash/core/
+# cp clash_meta package/luci-app-openclash/files/etc/openclash/core
 rm -rf clash-linux-amd64-compatible.tar.gz >/dev/null 2>&1
 rm -rf clash_meta >/dev/null 2>&1
 
