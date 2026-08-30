@@ -32,10 +32,10 @@ rm -rf clash-linux-amd64-compatible.tar.gz >/dev/null 2>&1
 rm -rf clash_meta >/dev/null 2>&1
 
 # 更新golang
-git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
-rm -rf feeds/packages/lang/golang
-cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
-rm -rf feeds/lean_packages
+# git clone https://github.com/coolsnowwolf/packages feeds/lean_packages
+# rm -rf feeds/packages/lang/golang
+# cp -rf feeds/lean_packages/lang/golang feeds/packages/lang/golang
+# rm -rf feeds/lean_packages
 
 # 替换homeproxy v大自用版
 # git clone https://github.com/VIKINGYFY/homeproxy.git feeds/homeproxy
