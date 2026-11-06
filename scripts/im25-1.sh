@@ -24,4 +24,4 @@
 # echo "src-git smallpackage https://github.com/ufk119/small-package.git" >> "feeds.conf.default"
 # echo "src-git smallpackage https://github.com/KK2018gh/small-package.git" >> "feeds.conf.default"
 # echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
-echo "src-git accel  https://github.com/wwng2333/luci-app-qsdk-accel.git" >> "feeds.conf.default"
+# echo "src-git accel  https://github.com/wwng2333/luci-app-qsdk-accel.git" >> "feeds.conf.default"
