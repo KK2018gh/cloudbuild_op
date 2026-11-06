@@ -24,4 +24,4 @@
 # echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
 # echo 'src-git settings https://github.com/KK2018gh/cloudbuild_settings.git' >>feeds.conf.default
 # echo 'src-git aclp https://github.com/kingyond/luci-app-accesscontrol-plus.git' >>feeds.conf.default
-echo "src-git accel https://github.com/wwng2333/luci-app-qsdk-accel.git" >> "feeds.conf.default"
+# echo "src-git accel https://github.com/wwng2333/luci-app-qsdk-accel.git" >> "feeds.conf.default"
