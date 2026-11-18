@@ -22,7 +22,7 @@ on:
 env:
   TARGET: x86_64_im_tar
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-25.12
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/x86_64_im_tar.config
   DIY_P1_SH: ./scripts/im25-1.sh
